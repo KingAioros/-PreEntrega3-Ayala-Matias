@@ -1,0 +1,518 @@
+//Importamos
+@import "mixin.scss";
+@import "variables.scss";
+//Fin importar
+
+/* Vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 412px){
+    //Generales
+div{
+    header{
+        nav{
+            .styleBoton{
+                border-radius: 6px;
+                background-color: whitesmoke;
+                opacity: 70%;
+                z-index: 3;
+            }
+        }
+        div{
+            a{
+                //Boton de busqueda
+                .searchIcon{
+                    display: none;
+                } 
+            }
+        }
+    }
+}
+
+    //Index Mobile
+div{
+    .GridMain{
+        display: grid;
+        grid-template-areas: 
+        "Sepa Sepa Sepa Sepa"
+        "Video Video Video Video"
+        "Box1 Box1 Box1 Box1"
+        "Box2 Box2 Box2 Box2"
+        "Box3 Box3 Box3 Box3"
+        "Box4 Box4 Box4 Box4"
+        ;
+        //Video Responsive
+        .videoYoutube iframe{
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 60%;
+        }
+    }
+}
+
+    //Nosotros Mobile
+    div{
+        .gridMainNos{
+            .gridMainNos2{
+                @include gridItDi(GridNos);
+                grid-template-areas: 
+                "Title"
+                "Text1"
+                "Text2"
+                "Img1"
+                "Text3"
+                "Text4"
+                "Img2"
+                "Text5"
+                "Img3"
+                ;
+            }
+        }
+    }
+
+    //Clases Mobile
+    div{
+        .gridMainClases{
+            .gridImgClases{
+                display: grid;
+                grid-area: gridImgeClases;
+                grid-template-areas: 
+                "cImge1"
+                "cImge2"
+                "cImge3"
+                "cImge4"
+                "cImge5"
+                "cImge6";
+            }
+        }
+    }
+
+    //Estetica Mobile
+    div{
+        .gridMainEst{
+            .gridMainEst2{
+                @include gridItDi(GridEst);
+                grid-template-rows: 3rem;
+                grid-template-areas: 
+                "TitleE"
+                "TitleE1"
+                "eText1"
+                "eImg1"
+                "TitleE2"
+                "eText2"
+                "eImg2"
+                "TitleE3"
+                "eText3"
+                "eImg3"
+                ;
+                .esteticaTitulo{
+                    font-size: 1rem;
+                    text-decoration: underline;
+                }
+                
+                .tituloEstetica1{
+                    font-size: $ft-Si;
+                }
+                
+                .tituloEstetica2{
+                    font-size: $ft-Si;
+                }
+                
+                .tituloEstetica3{
+                    font-size: $ft-Si;
+                }
+            }
+        }
+    }
+
+    //Contacto Mobile
+    div{
+        .gridMainCon{
+            .gridMainCon2{
+                @include gridCeDi(GridCon);
+                margin: $mg-Box;
+                grid-template-areas: 
+                "Contacto"
+                "Form"
+                "Maps"
+                "Seg"
+                "Reds"
+                ;
+                .contacto{
+                    font-size: $ft-Si;
+                }
+                
+                .formularioMaps{
+                    @include flexCe;
+                }
+                
+                .googleMaps iframe{
+                    width: 100%;
+                    height: 100%;
+                }
+                .buscanos{
+                    font-size: $ft-Si;
+                }
+                
+                .redesSociales{
+                    display: flex;
+                }
+            }
+        }
+    }
+    //Horarios Mobile
+    div{
+        .gridMainHs{
+            .cronoHorarios{
+                .cronoTable{
+                    .table_header{
+                        display: grid;
+                        grid-template-areas: 
+                        "calendar"
+                        "B1"
+                        "B2"
+                        "B3"
+                        "B4"
+                        "B5"
+                        "B6";
+                        .calendar{
+                            grid-area: calendar;
+                        }
+                        .B1{
+                            grid-area: B1;
+                        }
+                        .B2{
+                            grid-area: B2;
+                        }
+                        .B3{
+                            grid-area: B3;
+                        }
+                        .B4{
+                            grid-area: B4;
+                        }
+                        .B5{
+                            grid-area: B5;
+                        }
+                        .B6{
+                            grid-area: B6;
+                        }
+                    }
+                    table{
+                        thead{
+                            tr{
+                                display: none;
+                            }
+                        }
+                    tbody{
+                        .filaUno{
+                            grid-template-areas: 
+                            "f1Uno"
+                            "f1Dos"
+                            "f1Tres"
+                            "f1Cuatro";
+                            grid-template-columns: 15rem;
+                        }
+                        .filaDos{
+                            grid-template-areas: 
+                            "f2Uno"
+                            "f2Dos"
+                            "f2Tres"
+                            "f2Cuatro";
+                            grid-template-columns: 15rem;
+                        }
+                        .filaTres{
+                            grid-template-areas: 
+                            "f3Uno"
+                            "f3Dos"
+                            "f3Tres"
+                            "f3Cuatro";
+                            grid-template-columns: 15rem;
+                        }
+                        .filaCuatro{
+                            grid-template-areas: 
+                            "f4Uno"
+                            "f4Dos"
+                            "f4Tres"
+                            "f4Cuatro";
+                            grid-template-columns: 15rem;
+                        }
+                        .filaCinco{
+                            grid-template-areas: 
+                            "f5Uno"
+                            "f5Dos"
+                            "f5Tres"
+                            "f5Cuatro";
+                            grid-template-columns: 15rem;
+                        }
+                        .filaSeis{
+                            grid-template-areas: 
+                            "f6Uno"
+                            "f6Dos"
+                            "f6Tres"
+                            "f6Cuatro";
+                            grid-template-columns: 15rem;
+                        }
+                        .filaSiete{
+                            grid-template-areas: 
+                            "f7Uno"
+                            "f7Dos"
+                            "f7Tres"
+                            "f7Cuatro";
+                            grid-template-columns: 15rem;
+                        }
+                    }
+                    }
+                    }
+                }
+            }
+        }
+}
+
+/* Vista Tablet */
+@media only screen and (min-width: 413px) and (max-width: 912px){
+    //Generales
+    div{
+        header{
+            nav{
+                .styleBoton{
+                    border-radius: 6px;
+                    background-color: whitesmoke;
+                    opacity: 70%;
+                    z-index: 3;
+                }
+            }
+        }
+    }
+
+        //Index Tablet
+div{
+    .GridMain{
+        display: grid;
+        grid-template-areas: 
+        "Sepa Sepa Sepa Sepa"
+        "Video Video Video Video"
+        "Box1 Box1 Box2 Box2"
+        "Box1 Box1 Box2 Box2"
+        "Box3 Box3 Box4 Box4"
+        "Box3 Box3 Box4 Box4"
+        ;
+        //Video Responsive
+        .videoYoutube iframe{
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+
+    //Nosotros Tablet
+    div{
+        .gridMainNos{
+            .gridMainNos2{
+                @include gridItDi(GridNos);
+                grid-template-columns: 10rem;
+                padding: 1rem;
+                grid-template-areas: 
+                "Title Title"
+                "Text1 Text1"
+                "Text2 Img1"
+                "Text3 Text3"
+                "Text4 Img2"
+                "Text5 Text5"
+                "Img3 Img3"
+                ;
+            }
+        }
+    }
+
+    
+    //Clases Tablet
+    div{
+        .gridMainClases{
+            .gridImgClases{
+                display: grid;
+                grid-area: gridImgeClases;
+                grid-template-areas: 
+                "cImge1 cImge2"
+                "cImge3 cImge4"
+                "cImge5 cImge6"
+            }
+        }
+    }
+    
+    //Estetica Tablet
+    div{
+        .gridMainEst{
+            .gridMainEst2{
+                @include gridItDi(GridEst);
+                grid-template-rows: 3rem;
+                padding: 0.5rem;
+                grid-template-areas: 
+                "TitleE TitleE"
+                "TitleE1 TitleE1"
+                "eText1 eImg1"
+                "TitleE2 TitleE2"
+                "eText2 eImg2"
+                "TitleE3 TitleE3"
+                "eText3 eImg3"
+                ;
+                .esteticaTitulo{
+                    font-size: 2rem;
+                    text-decoration: underline;
+                }
+                
+                .tituloEstetica1{
+                    font-size: $ft-Si;
+                }
+                
+                .tituloEstetica2{
+                    font-size: $ft-Si;
+                }
+                
+                .tituloEstetica3{
+                    font-size: $ft-Si;
+                }
+            }
+        }
+    }
+
+    //Contacto Tablet
+    div{
+        .gridMainCon{
+            .gridMainCon2{
+                @include gridCeDi(GridCon);
+                margin: $mg-Box;
+                grid-template-areas: 
+                "Contacto"
+                "Form"
+                "Maps"
+                "Seg"
+                "Reds"
+                ;
+                .contacto{
+                    font-size: $ft-Si;
+                }
+                
+                .formularioMaps{
+                    @include flexCe;
+                }
+                
+                .googleMaps iframe{
+                    width: 100%;
+                    height: 100%;
+                }
+                .buscanos{
+                    font-size: $ft-Si;
+                }
+                
+                .redesSociales{
+                    display: flex;
+                }
+            }
+        }
+    }
+
+        //Horarios Mobile
+        div{
+            .gridMainHs{
+                .cronoHorarios{
+                    .cronoTable{
+                        .table_header{
+                            display: grid;
+                            grid-template-areas: 
+                            "calendar calendar"
+                            "B1 B2"
+                            "B3 B4"
+                            "B5 B6";
+                            .calendar{
+                                grid-area: calendar;
+                            }
+                            .B1{
+                                grid-area: B1;
+                            }
+                            .B2{
+                                grid-area: B2;
+                            }
+                            .B3{
+                                grid-area: B3;
+                            }
+                            .B4{
+                                grid-area: B4;
+                            }
+                            .B5{
+                                grid-area: B5;
+                            }
+                            .B6{
+                                grid-area: B6;
+                            }
+                        }
+                        table{
+                            thead{
+                                tr{
+                                    display: none;
+                                }
+                            }
+                        tbody{
+                            .filaUno{
+                                grid-template-areas: 
+                                "f1Uno"
+                                "f1Dos"
+                                "f1Tres"
+                                "f1Cuatro";
+                                grid-template-columns: 25rem;
+                            }
+                            .filaDos{
+                                grid-template-areas: 
+                                "f2Uno"
+                                "f2Dos"
+                                "f2Tres"
+                                "f2Cuatro";
+                                grid-template-columns: 25rem;
+                            }
+                            .filaTres{
+                                grid-template-areas: 
+                                "f3Uno"
+                                "f3Dos"
+                                "f3Tres"
+                                "f3Cuatro";
+                                grid-template-columns: 25rem;
+                            }
+                            .filaCuatro{
+                                grid-template-areas: 
+                                "f4Uno"
+                                "f4Dos"
+                                "f4Tres"
+                                "f4Cuatro";
+                                grid-template-columns: 25rem;
+                            }
+                            .filaCinco{
+                                grid-template-areas: 
+                                "f5Uno"
+                                "f5Dos"
+                                "f5Tres"
+                                "f5Cuatro";
+                                grid-template-columns: 25rem;
+                            }
+                            .filaSeis{
+                                grid-template-areas: 
+                                "f6Uno"
+                                "f6Dos"
+                                "f6Tres"
+                                "f6Cuatro";
+                                grid-template-columns: 25rem;
+                            }
+                            .filaSiete{
+                                grid-template-areas: 
+                                "f7Uno"
+                                "f7Dos"
+                                "f7Tres"
+                                "f7Cuatro";
+                                grid-template-columns: 25rem;
+                            }
+                        }
+                        }
+                        }
+                    }
+                }
+            }
+}
+    

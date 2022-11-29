@@ -1,0 +1,66 @@
+//Estilos Secundarios
+
+//Estilo Logos
+@mixin maTra{
+    margin: 50px;
+    transition: 3s;
+}
+
+//Fuente y Color
+
+@mixin fuCo($color,$fuente){
+    color: $color;
+    font-family: $fuente;
+}
+
+@mixin fuCoSi($color,$fuente,$size){
+    color: $color;
+    font-family: $fuente;
+    font-size: $size;
+}
+
+@mixin fuCoSiAr($color,$fuente,$size,$area){
+    color: $color;
+    font-family: $fuente;
+    font-size: $size;
+    grid-area: $area;
+}
+
+@mixin flexCe{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexSa{
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin gridCe($area){
+    grid-area: $area;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin gridCeDi($area){
+    display: grid;
+    grid-area: $area;
+    justify-content: center;
+}
+
+@mixin gridItDi($area){
+    display: grid;
+    grid-area: $area;
+    justify-items: center;
+    grid-template-columns: 20rem;
+}
+
+@mixin paBo{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+@mixin gridTe($area){
+    grid-area: $area;
+    text-align: center;
+}
