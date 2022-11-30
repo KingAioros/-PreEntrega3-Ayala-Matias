@@ -345,6 +345,7 @@ div{
             .gridMainEst2{
                 @include gridItDi(GridEst);
                 grid-template-rows: 3rem;
+                grid-template-columns: 15rem;
                 padding: 0.5rem;
                 grid-template-areas: 
                 "TitleE TitleE"

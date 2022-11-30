@@ -763,6 +763,7 @@ div #contactoPage {
     justify-items: center;
     grid-template-columns: 20rem;
     grid-template-rows: 3rem;
+    grid-template-columns: 15rem;
     padding: 0.5rem;
     grid-template-areas: "TitleE TitleE" "TitleE1 TitleE1" "eText1 eImg1" "TitleE2 TitleE2" "eText2 eImg2" "TitleE3 TitleE3" "eText3 eImg3"; }
     div .gridMainEst .gridMainEst2 .esteticaTitulo {
